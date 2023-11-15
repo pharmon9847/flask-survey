@@ -48,7 +48,37 @@ personality_quiz = Survey(
     ]
 )
 
+dreams_quiz = Survey(
+    "A Quiz About Your Dreams",
+    "Dig deeper to uncover what your dreams may mean!",
+    [
+        Question("Have you ever dreamt you could fly?"),
+        Question("Have you ever dreamt your teeth were falling out?"),
+        Question("Have you ever dreamt you died?"),
+        Question("Have you ever seen the movie 'Inception'?"),
+        Question("Did the top ever fall over at the end?"),
+        Question("Have you ever seen the movie 'Dreamscape'?"),
+        Question("Do you ever remember your dreams?")
+    ]
+)
+
+music_quiz = Survey(
+    "A Survey On Your Musical Taste",
+    "What kind of music do you like?",
+    [
+        Question("Do you like pop music?"),
+        Question("Do you like classic rock?"),
+        Question("Do you like hip hop?"),
+        Question("Do you like jazz?"),
+        Question("Do you like reggae?"),
+        Question("Do you like country?"),
+        Question("Do you like classical?")
+    ]
+)
+
 surveys = {
     "satisfaction": satisfaction_survey,
     "personality": personality_quiz,
+    "dreams": dreams_quiz,
+    "music": music_quiz,
 }
